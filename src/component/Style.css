@@ -1,0 +1,19 @@
+
+.mainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    background-color: bisque;
+}
+.boxesContainer{
+    display: flex;
+    justify-content: space-between;
+}
+.bottonContainer{
+    display: flex;
+    margin-top: 40px;
+}
