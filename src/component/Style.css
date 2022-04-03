@@ -9,9 +9,9 @@
     position: fixed;
     background-color: bisque;
 }
-.boxesContainer{
-    display: flex;
-    justify-content: space-between;
+.boxContainer{
+    display:table-row;
+    align-self:baseline;
 }
 .bottonContainer{
     display: flex;

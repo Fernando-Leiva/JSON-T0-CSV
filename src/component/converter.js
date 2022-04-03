@@ -52,7 +52,7 @@ export const ConvertJsonToCSV = () => {
         <div className="mainContainer">
             <form>
                 <div className="boxesContainer">
-                    <div>
+                    <div  >
                         <textarea rows={25} cols={30} placeholder="Insert Json"  value={jsonArr} onChange={(e)=>setJsonArr(e.target.value)}/>
                     </div>
                     <div>
