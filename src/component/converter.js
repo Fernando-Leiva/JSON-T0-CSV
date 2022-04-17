@@ -25,9 +25,9 @@ export const ConvertJsonToCSV = () => {
         setJsonArr('')
         setResultCSV('')
     }
-    const handleFormat = () => {
+    /* const handleFormat = () => {
 
-    }
+    } */
     const transformToCsv = (event) =>{
         event.preventDefault()
        // if( typeof jsonArr !== "string" || typeof JSON.parse(jsonArr) !== "number" ) {
@@ -50,22 +50,17 @@ export const ConvertJsonToCSV = () => {
     }
     return(
         <div className="mainContainer">
-            <form>
-                <div className="boxesContainer">
-                    <div  >
-                        <textarea rows={25} cols={30} placeholder="Insert Json"  value={jsonArr} onChange={(e)=>setJsonArr(e.target.value)}/>
-                    </div>
-                    <div>
-                        <textarea rows={25} cols={30} placeholder="Result from converting"  value={resultCSV} readOnly /> 
-                    </div>
+                <h1>JSON TO CSV</h1>
+                <div className="boxesContainer">   
+                    <textarea rows={25} cols={30} placeholder="Ingrese en formato Json"  value={jsonArr} onChange={(e)=>setJsonArr(e.target.value)}/>
+                    <textarea rows={25} cols={30} placeholder="Resultado de la conversión"  value={resultCSV} readOnly /> 
                 </div>
-                <div className="bottonContainer"> 
-                    <input type={'submit'} onClick={transformToCsv} value="Convertir a CSV"/>
-                    <input type={'submit'} onClick={handleFormat} value="Formatear JSON"/>
-                    <input type={'submit'} onClick={handleClean} value="Limpiar" />
-                    <input type={'submit'} onClick={insertSampleExample} value="Ejemplo" />
-                </div> 
-            </form>
+                <section className="bottonContainer"> 
+                    <button  onClick={transformToCsv} value="Convertir a CSV"> Convertir a CSV</button>
+                   {/*  <button  onClick={handleFormat} value="Formatear JSON"> Formatear JSON</button> */}
+                    <button  onClick={handleClean} value="Limpiar" >Limpiar</button>
+                    <button  onClick={insertSampleExample} value="Ejemplo" >Ejemplo</button>
+                </section>        
         </div>
     )
 }
